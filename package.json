@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.16",
     "next": "12.0.1",
+    "oidc-client-ts": "^2.0.0-beta.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-oidc-context": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "16.11.6",
@@ -19,5 +22,8 @@
     "eslint": "7",
     "eslint-config-next": "12.0.1",
     "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "graphql": "^15.7.1"
   }
 }
