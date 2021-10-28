@@ -7,7 +7,6 @@ interface Props {
 
 const Login = (props: Props) => {
     const auth = useAuth();
-    console.log(auth.user?.access_token);
     if (auth.isLoading) {
       return <div>Loading...</div>;
     }
