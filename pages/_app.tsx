@@ -11,8 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     response_type: "code",
     scopes: "openid email"
   };
+  const onSignin = () => {
+    location.href = "/";
+  };
   return (
-    <AuthProvider {...oidcConfig}>
+    <AuthProvider {...oidcConfig} onSigninCallback={onSignin}>
       <ApolloProvider client={client}>
         <Component {...pageProps} />
       </ApolloProvider>
